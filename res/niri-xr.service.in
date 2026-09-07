@@ -1,0 +1,7 @@
+[Unit]
+Description=An OpenXR background app for miscellaneous binds
+
+[Service]
+ExecStart=@bindir@/niri-xr --wait-xr
+TimeoutStopSec=5
+Restart=no

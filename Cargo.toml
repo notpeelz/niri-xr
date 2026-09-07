@@ -1,0 +1,21 @@
+[package]
+name = "niri-xr"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+resolver = "3"
+members = ["make"]
+
+[dependencies]
+clap = { version = "4.6.6", features = ["derive"] }
+eyre = "0.6.14"
+input-linux = "0.7.1"
+libc = "0.2.189"
+openxr = { version = "0.21.1", features = ["linked"], default-features = false }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+
+[build-dependencies]
+clap = { version = "4.6.6", features = ["derive"] }
+clap_complete = "4.6.9"
